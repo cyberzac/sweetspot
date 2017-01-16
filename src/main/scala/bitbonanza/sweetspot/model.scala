@@ -64,7 +64,8 @@ object Lister extends App {
     val ArticleRe =
       """<artikel><nr>(\d+)</nr><Artikelid>(\d+)</Artikelid><Varnummer>(\d+)</Varnummer><Namn>([^<]+)</Namn><Namn2(?:(?: ?/>)|(?:>([^<]+)</Namn2>))<Prisinklmoms>(\d+\.\d{2})</Prisinklmoms>(?:<Pant>([^<]+)</Pant>)?<Volymiml>(\d+\.\d{2})</Volymiml><PrisPerLiter>(\d+\.\d{2})</PrisPerLiter><Saljstart>(\d+-\d\d-\d\d)</Saljstart><Slutlev(?:(?: ?/>)|(?:>(\d+-\d\d-\d\d)</Slutlev>))<Varugrupp>([^<]+)</Varugrupp><Forpackning>([^<]+)</Forpackning><Forslutning(?:(?: ?/>)|(?:>([^<]+)</Forslutning>))<Ursprung(?:(?: ?/>)|(?:>([^<]+)</Ursprung>))<Ursprunglandnamn>([^<]+)</Ursprunglandnamn><Producent>([^<]+)</Producent><Leverantor>([^<]+)</Leverantor><Argang(?:(?: ?/>)|(?:>(\d+)</Argang>))<Provadargang(?:(?: ?/>)|(?:>([^<]+)</Provadargang>))<Alkoholhalt>(\d+\.\d+%)</Alkoholhalt><Sortiment>([^<]+)</Sortiment><Ekologisk>(\d+)</Ekologisk><Koscher>(\d+)</Koscher>(?:<RavarorBeskrivning(?:(?: ?/>)|(?:>([^<]+)</RavarorBeskrivning>)))?</artikel>"""
           .r.unanchored
-    val articlesFile = new File("src/main/resources/products-2016-02-09.xml")
+    //val articlesFile = new File("src/main/resources/products-2016-02-09.xml")
+    val articlesFile = new File("config/products-2016-02-09.xml")
     FileIO.
         fromPath(articlesFile.toPath).
         via(Framing.delimiter(ByteString("</artikel>"), maximumFrameLength = 4096, allowTruncation = true)).

@@ -20,7 +20,7 @@ trait Database {
     // 9509801,"http://www.systembolaget.se/dryck/roda-viner/chateau-la-conseillante-9509801","-"
     val Line =
       """(\d+),"([^"]+)","([^"]{2,})"""".r
-    val file = new File("src/main/resources/sugar.csv")
+    val file = new File("config/sugar.csv")
     //Http().singleRequest(HttpRequest(uri = articlesUrl)).foreach { response =>
     val f = FileIO.
         fromPath(file.toPath).

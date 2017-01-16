@@ -16,7 +16,7 @@ import scala.util.matching.Regex
 import scala.util.{Success, Try}
 
 object Import extends App {
-  val sugarFile = new File("./src/main/resources/sugar.csv")
+  val sugarFile = new File("config/sugar.csv")
   val table = {
     var m: Map[String, String] = Map.empty
     if (sugarFile.exists()) {

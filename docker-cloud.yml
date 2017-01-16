@@ -1,0 +1,7 @@
+sweetspot:
+  image: "oddo/sweetspot:latest"
+  restart: always
+  autoredeploy: true
+  target_num_containers: 1
+  ports:
+    - "80:80"

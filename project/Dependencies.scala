@@ -41,7 +41,7 @@ object Dependencies {
   val LevelDbJni = "org.fusesource.leveldbjni" % "leveldbjni-all" % "1.8"
   //val relate = "com.lucidchart" %% "relate" % "2.0.0-SNAPSHOT" withSources()
   val ScalaScraper = "net.ruippeixotog" %% "scala-scraper" % "1.2.+" withSources()
-  val ScalikeJdbc = "org.scalikejdbc" %% "scalikejdbc" % "3.0.0-M2"
+  //val ScalikeJdbc = "org.scalikejdbc" %% "scalikejdbc" % "3.0.0-M2"
   val H2 = "com.h2database" % "h2" % "1.4.+"
   val ScalaTest = "org.scalatest" %% "scalatest" % "3.0.1" % Test
   val ScalaCheck = "org.scalacheck" %% "scalacheck" % "1.12.4" % Test
