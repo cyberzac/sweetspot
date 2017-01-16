@@ -1,0 +1,104 @@
+<artiklar>
+    <artikel>
+        <nr>7555708</nr>
+        <Artikelid>959133</Artikelid>
+        <Varnummer>75557</Varnummer>
+        <Namn>Bingo by Sweden</Namn>
+        <Namn2>Rosé</Namn2>
+        <Prisinklmoms>168.00</Prisinklmoms>
+        <Volymiml>3000.00</Volymiml>
+        <PrisPerLiter>56.00</PrisPerLiter>
+        <Saljstart>2015-05-02</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rosévin</Varugrupp>
+        <Forpackning>Box</Forpackning>
+        <Forslutning/>
+        <Ursprung/>
+        <Ursprunglandnamn>Tyskland</Ursprunglandnamn>
+        <Producent>Export Union</Producent>
+        <Leverantor>Supreme Wine &amp; Spirit AB</Leverantor>
+        <Argang/>
+        <Provadargang/>
+        <Alkoholhalt>8.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>206401</nr>
+        <Artikelid>958893</Artikelid>
+        <Varnummer>2064</Varnummer>
+        <Namn>21 Gables</Namn>
+        <Namn2>Cabernet Sauvignon</Namn2>
+        <Prisinklmoms>179.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>238.67</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin, Stramt &amp; Nyanserat</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning>Naturkork</Forslutning>
+        <Ursprung>Western Cape</Ursprung>
+        <Ursprunglandnamn>Sydafrika</Ursprunglandnamn>
+        <Producent>Spier Wines Pty Ltd</Producent>
+        <Leverantor>Vinia Sweden AB</Leverantor>
+        <Argang>2012</Argang>
+        <Provadargang/>
+        <Alkoholhalt>14.00%</Alkoholhalt>
+        <Sortiment>FSN</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+        <RavarorBeskrivning>Cabernet sauvignon.</RavarorBeskrivning>
+    </artikel>
+    <artikel>
+        <nr>7430301</nr>
+        <Artikelid>959216</Artikelid>
+        <Varnummer>74303</Varnummer>
+        <Namn>Cuvée Laura</Namn>
+        <Namn2>Côtes du Rhône</Namn2>
+        <Prisinklmoms>125.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>166.67</PrisPerLiter>
+        <Saljstart>2015-05-02</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Vitt vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Rhonedalen</Ursprung>
+        <Ursprunglandnamn>Frankrike</Ursprunglandnamn>
+        <Producent>Domaine Roger Perrin</Producent>
+        <Leverantor>Tryffelsvinet AB</Leverantor>
+        <Argang>2013</Argang>
+        <Provadargang/>
+        <Alkoholhalt>13.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>9926201</nr>
+        <Artikelid>959229</Artikelid>
+        <Varnummer>99262</Varnummer>
+        <Namn>Hermitage</Namn>
+        <Namn2>Cave de Tain</Namn2>
+        <Prisinklmoms>299.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>398.67</PrisPerLiter>
+        <Saljstart>2015-08-21</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin, Kryddigt &amp; Mustigt</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning>Naturkork</Forslutning>
+        <Ursprung>Rhonedalen</Ursprung>
+        <Ursprunglandnamn>Frankrike</Ursprunglandnamn>
+        <Producent>Cave de Tain</Producent>
+        <Leverantor>Tryffelsvinet AB</Leverantor>
+        <Argang>2008</Argang>
+        <Provadargang/>
+        <Alkoholhalt>13.50%</Alkoholhalt>
+        <Sortiment>TSE</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+        <RavarorBeskrivning>Syrah.</RavarorBeskrivning>
+    </artikel>
+</artiklar>

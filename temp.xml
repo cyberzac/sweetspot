@@ -1,0 +1,879 @@
+<?xml version="1.0" encoding="utf-8"?>
+<artiklar xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <skapad-tid>2016-02-09 05:00</skapad-tid>
+    <info>
+        <meddelande>Läs användarvillkoren på www.systembolaget.se. Begreppet Modul används inte längre i Systembolagets
+            verksamhet. Det innebär att det även har tagits bort från våra API-filer.
+        </meddelande>
+    </info>
+    <artikel>
+        <nr>101</nr>
+        <Artikelid>1</Artikelid>
+        <Varnummer>1</Varnummer>
+        <Namn>Renat</Namn>
+        <Namn2/>
+        <Prisinklmoms>205.00</Prisinklmoms>
+        <Volymiml>700.00</Volymiml>
+        <PrisPerLiter>292.86</PrisPerLiter>
+        <Saljstart>1993-10-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Okryddad sprit</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung/>
+        <Ursprunglandnamn>Internationellt märke</Ursprunglandnamn>
+        <Producent>Pernod Ricard</Producent>
+        <Leverantor>Pernod Ricard Sweden AB</Leverantor>
+        <Argang/>
+        <Provadargang/>
+        <Alkoholhalt>37.50%</Alkoholhalt>
+        <Sortiment>FS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+        <RavarorBeskrivning>Förr potatis numera endast säd.</RavarorBeskrivning>
+    </artikel>
+    <artikel>
+        <nr>7599701</nr>
+        <Artikelid>1000005</Artikelid>
+        <Varnummer>75997</Varnummer>
+        <Namn>Motzenbäcker Marie</Namn>
+        <Namn2>Riesling Weissburgunder Spätlese Trocken</Namn2>
+        <Prisinklmoms>139.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>185.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Vitt vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Pfalz</Ursprung>
+        <Ursprunglandnamn>Tyskland</Ursprunglandnamn>
+        <Producent>Menger-Krug</Producent>
+        <Leverantor>Terrific Wines AB</Leverantor>
+        <Argang>2014</Argang>
+        <Provadargang/>
+        <Alkoholhalt>12.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7548901</nr>
+        <Artikelid>1000008</Artikelid>
+        <Varnummer>75489</Varnummer>
+        <Namn>Valtellina Superiore</Namn>
+        <Namn2>Sassella Riserva</Namn2>
+        <Prisinklmoms>310.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>413.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Lombardiet</Ursprung>
+        <Ursprunglandnamn>Italien</Ursprunglandnamn>
+        <Producent>Arpepe</Producent>
+        <Leverantor>Vinoliv Import AB</Leverantor>
+        <Argang>2011</Argang>
+        <Provadargang/>
+        <Alkoholhalt>13.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <EkoloorBeskrivning>Förr potatis numera endast säd.</RavarorBeskrivning>
+    </artikel>
+    <artikel>
+        <nr>7599701</nr>
+        <Artikelid>1000005</Artikelid>
+        <Varnummer>75997</Varnummer>
+        <Namn>Motzenbäcker Marie</Namn>
+        <Namn2>Riesling Weissburgunder Spätlese Trocken</Namn2>
+        <Prisinklmoms>139.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>185.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Vitt vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Pfalz</Ursprung>
+        <Ursprunglandnamn>Tyskland</Ursprunglandnamn>
+        <Producent>Menger-Krug</Producent>
+        <Leverantor>Terrific Wines AB</Leverantor>
+        <Argang>2014</Argang>
+        <Provadargang/>
+        <Alkoholhalt>12.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7548901</nr>
+        <Artikelid>1000008</Artikelid>
+        <Varnummer>75489</Varnummer>
+        <Namn>Valtellina Superiore</Namn>
+        <Namn2>Sassella Riserva</Namn2>
+        <Prisinklmoms>310.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>413.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Lombardiet</Ursprung>
+        <Ursprunglandnamn>Italien</Ursprunglandnamn>
+        <Producent>Arpepe</Producent>
+        <Leverantor>Vinoliv Import AB</Leverantor>
+        <Argang>2011</Argang>
+        <Provadargang/>
+        <Alkoholhalt>13.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7420301</nr>
+        <Artikelid>1000053</Artikelid>
+        <Varnummer>74203</Varnummer>
+        <Namn>Landin Pas Petite</Namn>
+        <Namn2>Petite Sirah Zinfandel</Namn2>
+        <Prisinklmoms>179.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>238.67</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Kalifornien</Ursprung>
+        <Ursprunglandnamn>USA</Ursprunglandnamn>
+        <Producent>Kunde Family Estate</Producent>
+        <Leverantor>Terrific Wines AB</Leverantor>
+        <Argang>2013</Argang>
+        <Provadargang/>
+        <Alkoholhalt>14.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7774701</nr>
+        <Artikelid>1000080</Artikelid>
+        <Varnummer>77747</Varnummer>
+        <Namn>Canella</Namn>
+        <Namn2>Valdobbiadene Prosecco Superiore Extra Dry</Namn2>
+        <Prisinklmoms>145.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>193.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Mousserande vin, Vitt torrt</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Venetien</Ursprung>
+        <Ursprunglandnamn>Italien</Ursprunglandnamn>
+        <Producent>Canella SpA</Producent>
+        <Leverantor>Fine Brands Sweden AB</Leverantor>
+        <Argang>2014</Argang>
+        <Provadargang/>
+        <Alkoholhalt>11.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisgisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7420301</nr>
+        <Artikelid>1000053</Artikelid>
+        <Varnummer>74203</Varnummer>
+        <Namn>Landin Pas Petite</Namn>
+        <Namn2>Petite Sirah Zinfandel</Namn2>
+        <Prisinklmoms>179.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>238.67</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Kalifornien</Ursprung>
+        <Ursprunglandnamn>USA</Ursprunglandnamn>
+        <Producent>Kunde Family Estate</Producent>
+        <Leverantor>Terrific Wines AB</Leverantor>
+        <Argang>2013</Argang>
+        <Provadargang/>
+        <Alkoholhalt>14.50%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7774701</nr>
+        <Artikelid>1000080</Artikelid>
+        <Varnummer>77747</Varnummer>
+        <Namn>Canella</Namn>
+        <Namn2>Valdobbiadene Prosecco Superiore Extra Dry</Namn2>
+        <Prisinklmoms>145.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>193.33</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Mousserande vin, Vitt torrt</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Venetien</Ursprung>
+        <Ursprunglandnamn>Italien</Ursprunglandnamn>
+        <Producent>Canella SpA</Producent>
+        <Leverantor>Fine Brands Sweden AB</Leverantor>
+        <Argang>2014</Argang>
+        <Provadargang/>
+        <Alkoholhalt>11.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7563901</nr>
+        <Artikelid>1000083</Artikelid>
+        <Varnummer>75639</Varnummer>
+        <Namn>Viña Soledad</Namn>
+        <Namn2>Tête de Cuvée Reserva</Namn2>
+        <Prisinklmoms>149.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>198.67</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Vitt vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Rioja</Ursprung>
+        <Ursprunglandnamn>Spanien</Ursprunglandnamn>
+        <Producent>Bodegas Franco-Españolas</Producent>
+        <Leverantor>Terrific Wines AB</Leverantor>
+        <Argang>2005</Argang>
+        <Provadargang/>
+        <Alkoholhalt>12.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Koscher>
+    </artikel>
+    <artikel>
+        <nr>7547101</nr>
+        <Artikelid>1000114</Artikelid>
+        <Varnummer>75471</Varnummer>
+        <Namn>Alma Rosa</Namn>
+        <Namn2>Pinot Noir</Namn2>
+        <Prisinklmoms>245.00</Prisinklmoms>
+        <Volymiml>750.00</Volymiml>
+        <PrisPerLiter>326.67</PrisPerLiter>
+        <Saljstart>2015-09-01</Saljstart>
+        <Slutlev/>
+        <Varugrupp>Rött vin</Varugrupp>
+        <Forpackning>Flaska</Forpackning>
+        <Forslutning/>
+        <Ursprung>Kalifornien</Ursprung>
+        <Ursprunglandnamn>USA</Ursprunglandnamn>
+        <Producent>Alma Rosa Winery &amp; Vineyards</Producent>
+        <Leverantor>Reconnaissance Wine AB</Leverantor>
+        <Argang>2013</Argang>
+        <Provadargang/>
+        <Alkoholhalt>15.00%</Alkoholhalt>
+        <Sortiment>BS</Sortiment>
+        <Ekologisk>0</Ekologisk>
+        <Koscher>0</Kosk>0
+    </Ekologisk>
+    <Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7563901</nr>
+<Artikelid>1000083</Artikelid>
+<Varnummer>75639</Varnummer>
+<Namn>Viña Soledad</Namn>
+<Namn2>Tête de Cuvée Reserva</Namn2>
+<Prisinklmoms>149.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>198.67</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Vitt vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Rioja</Ursprung>
+<Ursprunglandnamn>Spanien</Ursprunglandnamn>
+<Producent>Bodegas Franco-Españolas</Producent>
+<Leverantor>Terrific Wines AB</Leverantor>
+<Argang>2005</Argang>
+<Provadargang/>
+<Alkoholhalt>12.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7547101</nr>
+<Artikelid>1000114</Artikelid>
+<Varnummer>75471</Varnummer>
+<Namn>Alma Rosa</Namn>
+<Namn2>Pinot Noir</Namn2>
+<Prisinklmoms>245.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>326.67</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rött vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Kalifornien</Ursprung>
+<Ursprunglandnamn>USA</Ursprunglandnamn>
+<Producent>Alma Rosa Winery &amp; Vineyards</Producent>
+<Leverantor>Reconnaissance Wine AB</Leverantor>
+<Argang>2013</Argang>
+<Provadargang/>
+<Alkoholhalt>15.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7521801</nr>
+<Artikelid>1000131</Artikelid>
+<Varnummer>75218</Varnummer>
+<Namn>Purcari</Namn>
+<Namn2>Freedom Blend</Namn2>
+<Prisinklmoms>166.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>221.33</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rött vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Moldavien</Ursprunglandnamn>
+<Producent>Purcari</Producent>
+<Leverantor>High Coast Wine AB</Leverantor>
+<Argang>2011</Argang>
+<Provadargang/>
+<Alkoholhalt>14.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8936603</nr>
+<Artikelid>1000155</Artikelid>
+<Varnummer>89366</Varnummer>
+<Namn>Midas Golden Pilsner</Namn>
+<Namn2/>
+<Prisinklmoms>26.90</Prisinklmoms>
+<Volymiml>330.00</Volymiml>
+<PrisPerLiter>81.52</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ljus lager</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Sverige</Ursprunglandnamn>
+<Producent>Imperiebryggeriet AB</Producent>
+<Leverantor>Imperiebryggeriet AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.90%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8962603</nr>
+<Artikelid>1000158</Artikelid>
+<Varnummer>89626</Varnummer>
+<Namn>Barbarossa</cher>
+</artikel><artikel>
+<nr>7521801</nr>
+<Artikelid>1000131</Artikelid>
+<Varnummer>75218</Varnummer>
+<Namn>Purcari</Namn>
+<Namn2>Freedom Blend</Namn2>
+<Prisinklmoms>166.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>221.33</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rött vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Moldavien</Ursprunglandnamn>
+<Producent>Purcari</Producent>
+<Leverantor>High Coast Wine AB</Leverantor>
+<Argang>2011</Argang>
+<Provadargang/>
+<Alkoholhalt>14.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8936603</nr>
+<Artikelid>1000155</Artikelid>
+<Varnummer>89366</Varnummer>
+<Namn>Midas Golden Pilsner</Namn>
+<Namn2/>
+<Prisinklmoms>26.90</Prisinklmoms>
+<Volymiml>330.00</Volymiml>
+<PrisPerLiter>81.52</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ljus lager</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Sverige</Ursprunglandnamn>
+<Producent>Imperiebryggeriet AB</Producent>
+<Leverantor>Imperiebryggeriet AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.90%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8962603</nr>
+<Artikelid>1000158</Artikelid>
+<Varnummer>89626</Varnummer>
+<Namn>Barbarossa</Namn>
+<Namn2>Imperial Red Ale</Namn2>
+<Prisinklmoms>35.90</Prisinklmoms>
+<Volymiml>330.00</Volymiml>
+<PrisPerLiter>108.79</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Sverige</Ursprunglandnamn>
+<Producent>Imperiebryggeriet AB</Producent>
+<Leverantor>Imperiebryggeriet AB</Leverantor>
+<Argang>2015</Argang>
+<Provadargang/>
+<Alkoholhalt>7.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8983301</nr>
+<Artikelid>1000175</Artikelid>
+<Varnummer>89833</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Pale Ale</Namn2>
+<Prisinklmoms>37.20</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.40</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.40%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7785701</nr>
+<Artikelid>1000178</Artikelid>
+<Varnummer>77857</Varnummer>
+<Namn>Canella</Namn>
+<Namn2>Bellini</Namn2>
+<Prisinklmoms>132.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerNamn>
+<Namn2>Imperial Red Ale</Namn2>
+<Prisinklmoms>35.90</Prisinklmoms>
+<Volymiml>330.00</Volymiml>
+<PrisPerLiter>108.79</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Sverige</Ursprunglandnamn>
+<Producent>Imperiebryggeriet AB</Producent>
+<Leverantor>Imperiebryggeriet AB</Leverantor>
+<Argang>2015</Argang>
+<Provadargang/>
+<Alkoholhalt>7.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8983301</nr>
+<Artikelid>1000175</Artikelid>
+<Varnummer>89833</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Pale Ale</Namn2>
+<Prisinklmoms>37.20</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.40</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.40%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7785701</nr>
+<Artikelid>1000178</Artikelid>
+<Varnummer>77857</Varnummer>
+<Namn>Canella</Namn>
+<Namn2>Bellini</Namn2>
+<Prisinklmoms>132.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>176.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Mousserande vin, Övrigt</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Italien</Ursprunglandnamn>
+<Producent>Canella SpA</Producent>
+<Leverantor>Fine Brands Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>5.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8927101</nr>
+<Artikelid>1000201</Artikelid>
+<Varnummer>89271</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Blonde Ale</Namn2>
+<Prisinklmoms>37.20</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.40</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8945901</nr>
+<Artikelid>1000228</Artikelid>
+<Varnummer>89459</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Amber Ale</Namn2>
+<Prisinklmoms>37.10</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.20</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</VarugruLiter>176.00
+</PrisPerLiter><Saljstart>2015-09-01</Saljstart><Slutlev/><Varugrupp>Mousserande vin, Övrigt</Varugrupp><Forpackning>
+Flaska
+</Forpackning><Forslutning/><Ursprung/><Ursprunglandnamn>Italien</Ursprunglandnamn><Producent>Canella SpA
+</Producent><Leverantor>Fine Brands Sweden AB</Leverantor><Argang/><Provadargang/><Alkoholhalt>5.00%
+</Alkoholhalt><Sortiment>BS</Sortiment><Ekologisk>0</Ekologisk><Koscher>0</Koscher></artikel><artikel>
+<nr>8927101</nr>
+<Artikelid>1000201</Artikelid>
+<Varnummer>89271</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Blonde Ale</Namn2>
+<Prisinklmoms>37.20</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.40</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>4.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8945901</nr>
+<Artikelid>1000228</Artikelid>
+<Varnummer>89459</Varnummer>
+<Namn>McGrath's</Namn>
+<Namn2>Irish Amber Ale</Namn2>
+<Prisinklmoms>37.10</Prisinklmoms>
+<Volymiml>500.00</Volymiml>
+<PrisPerLiter>74.20</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Öl, Ale</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>5.20%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7459301</nr>
+<Artikelid>1000296</Artikelid>
+<Varnummer>74593</Varnummer>
+<Namn>Johanneshof Reinisch</Namn>
+<Namn2>Riesling</Namn2>
+<Prisinklmoms>132.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>176.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Vitt vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Niederösterreich</Ursprung>
+<Ursprunglandnamn>Österrike</Ursprunglandnamn>
+<Producent>Johann und Veronika Reinisch</Producent>
+<Leverantor>KA Import</Leverantor>
+<Argang>2014</Argang>
+<Provadargang/>
+<Alkoholhalt>12.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>1</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7440201</nr>
+<Artikelid>1000343</Artikelid>
+<Varnummer>74402</Varnummer>
+<Namn>Johanneshof Reinisch</Namn>
+<Namn2>Pinot Noir</Namn2>
+<Prisinklmoms>141.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>188.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rött vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Urspp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Irland</Ursprunglandnamn>
+<Producent>Clanconnel Brewing Company</Producent>
+<Leverantor>New Brews Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>5.20%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7459301</nr>
+<Artikelid>1000296</Artikelid>
+<Varnummer>74593</Varnummer>
+<Namn>Johanneshof Reinisch</Namn>
+<Namn2>Riesling</Namn2>
+<Prisinklmoms>132.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>176.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Vitt vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Niederösterreich</Ursprung>
+<Ursprunglandnamn>Österrike</Ursprunglandnamn>
+<Producent>Johann und Veronika Reinisch</Producent>
+<Leverantor>KA Import</Leverantor>
+<Argang>2014</Argang>
+<Provadargang/>
+<Alkoholhalt>12.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>1</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7440201</nr>
+<Artikelid>1000343</Artikelid>
+<Varnummer>74402</Varnummer>
+<Namn>Johanneshof Reinisch</Namn>
+<Namn2>Pinot Noir</Namn2>
+<Prisinklmoms>141.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>188.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rött vin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Niederösterreich</Ursprung>
+<Ursprunglandnamn>Österrike</Ursprunglandnamn>
+<Producent>Johann und Veronika Reinisch</Producent>
+<Leverantor>KA Import</Leverantor>
+<Argang>2013</Argang>
+<Provadargang/>
+<Alkoholhalt>13.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>1</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7761601</nr>
+<Artikelid>1000356</Artikelid>
+<Varnummer>77616</Varnummer>
+<Namn>Canella</Namn>
+<Namn2>Cuvée Deroà Spumante Brut</Namn2>
+<Prisinklmoms>96.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>128.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Mousserande vin, Vitt torrt</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Italien</Ursprunglandnamn>
+<Producent>Canella SpA</Producent>
+<Leverantor>Fine Brands Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>11.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8780501</nr>
+<Artikelid>1000369</Artikelid>
+<Varnummer>87805</Varnummer>
+<Namn>Josés</Namn>
+<Namn2>Tequila Blanco</Namn2>
+<Prisinklmoms>369.00</Prisinklmoms>
+<Volymiml>700.00</Volymiml>
+<PrisPerLiter>527.14</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Tequila och Mezcal</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Mexiko</Ursprunglprung>Niederösterreich
+</Ursprung><Ursprunglandnamn>Österrike</Ursprunglandnamn><Producent>Johann und Veronika Reinisch</Producent><Leverantor>
+KA Import
+</Leverantor><Argang>2013</Argang><Provadargang/><Alkoholhalt>13.00%</Alkoholhalt><Sortiment>BS</Sortiment><Ekologisk>
+1
+</Ekologisk><Koscher>0</Koscher></artikel><artikel>
+<nr>7761601</nr>
+<Artikelid>1000356</Artikelid>
+<Varnummer>77616</Varnummer>
+<Namn>Canella</Namn>
+<Namn2>Cuvée Deroà Spumante Brut</Namn2>
+<Prisinklmoms>96.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>128.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Mousserande vin, Vitt torrt</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Italien</Ursprunglandnamn>
+<Producent>Canella SpA</Producent>
+<Leverantor>Fine Brands Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>11.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8780501</nr>
+<Artikelid>1000369</Artikelid>
+<Varnummer>87805</Varnummer>
+<Namn>Josés</Namn>
+<Namn2>Tequila Blanco</Namn2>
+<Prisinklmoms>369.00</Prisinklmoms>
+<Volymiml>700.00</Volymiml>
+<PrisPerLiter>527.14</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Tequila och Mezcal</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Mexiko</Ursprunglandnamn>
+<Producent>Tierra de Agaves</Producent>
+<Leverantor>Fine Brands Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>40.00%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>8587801</nr>
+<Artikelid>1000372</Artikelid>
+<Varnummer>85878</Varnummer>
+<Namn>Fighting Cock</Namn>
+<Namn2>Kentucky Straight Bourbon</Namn2>
+<Prisinklmoms>571.00</Prisinklmoms>
+<Volymiml>1000.00</Volymiml>
+<PrisPerLiter>571.00</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Whisky, Övrig</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung>Kentucky</Ursprung>
+<Ursprunglandnamn>USA</Ursprunglandnamn>
+<Producent>Heaven Hill Distilleries</Producent>
+<Leverantor>Fine Brands Sweden AB</Leverantor>
+<Argang/>
+<Provadargang/>
+<Alkoholhalt>51.50%</Alkoholhalt>
+<Sortiment>BS</Sortiment>
+<Ekologisk>0</Ekologisk>
+<Koscher>0</Koscher>
+</artikel><artikel>
+<nr>7457501</nr>
+<Artikelid>1000375</Artikelid>
+<Varnummer>74575</Varnummer>
+<Namn>Rosé Piscine</Namn>
+<Namn2/>
+<Prisinklmoms>98.00</Prisinklmoms>
+<Volymiml>750.00</Volymiml>
+<PrisPerLiter>130.67</PrisPerLiter>
+<Saljstart>2015-09-01</Saljstart>
+<Slutlev/>
+<Varugrupp>Rosévin</Varugrupp>
+<Forpackning>Flaska</Forpackning>
+<Forslutning/>
+<Ursprung/>
+<Ursprunglandnamn>Frankrike</Ursprunglandnamn>
+<Producent>Vinovalie</Producent>
+<Leverantor>Smaksinnet AB</Leverantor>
+<Argang

@@ -1,0 +1,993 @@
+
+
+<!DOCTYPE html>
+<html data-ng-app="ewae" id="ng-ewae" lang="sv" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, maximum-scale=3.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Sök dryck</title>
+<meta content="Sök dryck" property="og:title" />
+<meta content="article" property="og:type" />
+<meta content="//static.systembolaget.se/imagelibrary/publishedmedia/y5odmt7jk9yhoej1lrg5/sb-logotype-social.jpg" property="og:image" />
+
+    <link href="//static.systembolaget.se/bundles/app.css?v=lzWdMLEsMRN864vFbQsWATcu7jcgkA3nuskjgxAzvBw1" rel="stylesheet"/>
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="//static.systembolaget.se/content/assets/images/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="//static.systembolaget.se/content/assets/images/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="//static.systembolaget.se/content/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="//static.systembolaget.se/content/assets/images/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="//static.systembolaget.se/content/assets/images/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="//static.systembolaget.se/content/assets/images/favicon-128.png" sizes="128x128" />
+    <link rel="shortcut icon" href="//static.systembolaget.se/content/assets/images/favicon.ico" />
+    <script type="text/javascript">
+        dataLayer = [];
+    </script>
+</head>
+<body data-ng-controller="PageController" data-ng-class="{'has-open-modal': isAnyModalOpen}" data-sb-analytics-init>
+    <noscript>
+        <iframe src="//www.googletagmanager.com/ns.html?id=GTM-N77VQJ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-N77VQJ');
+    </script>
+    <div id="wrap">
+
+
+<header data-ng-class="{'is-nav-ready': isNavReady, 'has-auth-status': hasAuthStatus, 'mobile-nav': !isTopNavConfined}" data-ng-controller="HeaderController" data-sb-navigation data-sb-search-url="/sok-dryck/" class="ng-cloak clearfix" data-ng-cloak>
+    <div class="top-ribbon" data-sb-top-ribbon>
+        <div class="container">
+            <div class="row">
+                <div class="top-nav-container">
+                    <div class="top-row clearfix">
+                        <div class="brand">
+                            <a href="/" tabindex="2"><img src="//static.systembolaget.se/content/assets/images/sb-logotype.svg" data-sb-svg-fallback="//static.systembolaget.se/content/assets/images/sb-logotype.gif" class="logotype" alt="Hem" /></a>
+                        </div>
+
+                        <nav>
+                            <ul class="top-nav">
+                                <li>
+<a href="/fakta-och-nyheter/">Dryckesfakta &amp; nyheter</a>
+                            </li><li>
+<a href="/dryck-och-mat/">Dryck &amp; mat</a>
+                            </li><li>
+<a href="/om-alkohol/">Om alkohol</a>
+                            </li><li>
+<a href="/vart-uppdrag/">V&#229;rt uppdrag</a>
+                            </li><li>
+<a href="/butiker-ombud/">&#214;ppettider</a>
+                            </li>
+                            </ul>
+                        </nav>
+                        <div class="search-input-holder" data-ng-controller="ProductSearchFreeTextController" data-ng-click="userInteracted()">
+                            <form data-ng-submit="freeTextSearch()" class="ng-pristine ng-valid">
+                                <label for="ProductSearchTextInput" class="a11y">Sök dryck</label>
+                                <input id="ProductSearchTextInput" type="search" placeholder="Sök dryck, land, varunummer, druva etc" spellcheck="false" data-ng-model="searchString" tabindex="2" data-sb-blur-on-submit>
+                                <button id="ProductSearchSubmitButton" type="submit" class="icon-only-button" tabindex="2">
+                                    Sök
+                                    <i class="icon icon-search" data-ng-hide="isLoading()"></i>
+                                    <span class="ajax-loader ng-hide" data-ng-show="isLoading()"></span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="action-buttons-holder" data-ng-class="{'pull-right': !isTopNavConfined}">
+                            <a href="/dryckeslista" class="cmp-btn basket-list-icon" data-ng-class="{'cmp-btn--action': !isTopNavConfined, 'icon-only-button': isTopNavConfined}">
+                                <div class="indicator" data-ng-class="{'bounce': itemAdded}">
+                                    <i class="icon icon-list"></i>
+                                    <span class="notifications ng-cloak" data-ng-show="numBasketItems()">{{numBasketItems()}}</span>
+                                </div>
+                                <span>Dryckeslista</span>
+                            </a>
+
+                            <div id="user-nav" class="ng-cloak" data-sb-user-nav>
+                                <button class="btn-user-nav cmp-btn cmp-btn--white" type="button" data-ng-click="toggleUserNav()" data-ng-class="{'active':showUserNav}">
+                                    <div class="icon-holder">
+                                        <i class="icon icon-user"></i>
+                                    </div>
+                                    <span class="username" data-ng-if="!isAuthenticated">Logga in</span>
+                                    <span class="username" data-ng-if="isAuthenticated">{{firstname}}</span>
+                                </button>
+                                <ul class="user-nav-x" data-ng-show="showUserNav">
+                                    <li class="login-li"><a href="/mina-sidor/">Mina sidor</a></li>
+                                    <li class="login-li" data-ng-show="!isAuthenticated"><a data-sb-auth-link>Logga in</a></li>
+                                    <li class="login-li" data-ng-show="isAuthenticated"><a data-sb-logout>Logga ut</a></li>
+                                </ul>
+                            </div>
+
+                            <button type="button" class="ext-unstyled-button hamburger-2 print-hide" data-ng-class="{'active': mobileNavOpen}" data-ng-click="toggleMobileNav()">
+                                <div class="icon-holder">
+                                    <div class="hamburger-icon">
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <span class="text">Meny</span>
+                            </button>
+                        </div>
+                        
+
+                    </div>
+                    <div class="nav-dropdown" data-ng-show="mobileNavOpen"></div>
+                    <div class="top-ribbon-popout clearfix" data-sb-top-ribbon-popout>
+                        <div class="search">
+                            <a class="click-area" href="/sok-dryck/">
+                                <button class="icon-only-button show-search"><i class="icon icon-search"></i></button>
+                                <span>Sök dryck</span>
+                            </a>
+                            <div data-ng-show="isSearchPage" class="search-input-holder" data-ng-controller="ProductSearchFreeTextController">
+                                <form data-ng-submit="freeTextSearch()">
+                                    <label for="ProductSearchTextInput_mobile" class="a11y">Sök dryck</label>
+                                    <input id="ProductSearchTextInput_mobile" type="search" placeholder="Sök dryck, land, varunummer, druva etc" spellcheck="false" data-ng-model="searchString" data-sb-blur-on-submit data-sb-focus-when="isSearchPage">
+                                    <button id="ProductSearchSubmitButton_mobile" type="submit" class="icon-only-button">
+                                        Sök
+                                        <i class="icon icon-search" data-ng-hide="isLoading()"></i>
+                                        <span class="ajax-loader ng-hide" data-ng-show="isLoading()"></span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+
+                        <div class="basket-button-container">
+                            <a href="/dryckeslista" class="cmp-btn basket-list-icon icon-only-button">
+                                <div class="indicator" data-ng-class="{'bounce': itemAdded}">
+                                    <i class="icon icon-list"></i>
+                                    <span class="notifications ng-cloak" data-ng-show="numBasketItems()">{{numBasketItems()}}</span>
+                                </div>
+                                <span data-ng-show="!isSearchPage">Dryckeslista</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ribbon-container"></div>
+</header>
+
+
+<div class="megamenu-container xs-hide" data-ng-controller="MegaMenuController as mmc">
+
+    <div class="menu-row ">
+        <ul>
+                <li data-ng-class="{'selected': mmc.isTabSelected('3708')}" data-ng-click="mmc.selectTab('3708')">
+                    <span>Alla drycker <i class="icon icon-down"></i></span>
+                    
+                </li>
+                <li data-ng-class="{'selected': mmc.isTabSelected('3709')}" data-ng-click="mmc.selectTab('3709')">
+                    <span>R&#246;tt vin <i class="icon icon-down"></i></span>
+                    
+                </li>
+                <li data-ng-class="{'selected': mmc.isTabSelected('3710')}" data-ng-click="mmc.selectTab('3710')">
+                    <span>Vitt vin <i class="icon icon-down"></i></span>
+                    
+                </li>
+                <li data-ng-class="{'selected': mmc.isTabSelected('3711')}" data-ng-click="mmc.selectTab('3711')">
+                    <span>&#214;l <i class="icon icon-down"></i></span>
+                    
+                </li>
+                <li data-ng-class="{'selected': mmc.isTabSelected('3712')}" data-ng-click="mmc.selectTab('3712')">
+                    <span>Alkoholfritt <i class="icon icon-down"></i></span>
+                    
+                </li>
+        </ul>
+    </div>
+
+    <div class="megamenu-content-container" data-ng-if="mmc.data.selectedTab" data-ng-cloak>
+        <div class="megamenu-content" >
+            <ul data-ng-repeat="area in mmc.getAreas()" data-ng-class="{'no-links': mmc.HasAnyLink(area), 'has-any-image': mmc.HasAnyImages(area)}">
+                <li class="header" data-ng-if="area.Heading.length > 0"><h2><span>{{area.Heading}}</span></h2></li>
+                <li data-ng-repeat="n in [1,6] | range" data-ng-class="{'has-no-image': !area['IconReference' + n].ImageUrl}"><span><a data-ng-href="{{'/sok-dryck/' + area['RelativeUrl' + n]}}"><img data-ng-if="area['IconReference' + n].ImageUrl" data-ng-src="{{area['IconReference' + n].ImageUrl}}" alt="{{area['IconReference' + n].ImageAltAttribute}}" />{{area['LinkName' + n]}}</a></span></li>
+                <li class="show-all"><span><a data-ng-href="{{'/sok-dryck/' + area.ShowAllLink}}">{{area.ShowAllLinkText}}</a></span></li>
+                <li class="footer"><span><a data-ng-href="{{area.FooterLink}}">{{area.FooterLinkText}}</a></span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <section class="search-beverage" data-ng-class="{'opening':isSearchOpening, 'open':isSearchOpen}" data-ng-controller="ProductSearchController" data-sbval-filter-prefixes='{"pricenavigator":"","alcoholpercentagenavigator":""}'>
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xs-12 layout-search-beverage">
+                <div data-ng-controller="ProductSearchFiltersController" data-ng-show="hasFilters()">
+                    <div data-ng-cloak data-ng-show="hasQueryText()" class="your-search-result">
+                        <span>Ditt s&#246;kresultat f&#246;r: <strong>{{getSearchQueryText()}}</strong></span>
+                    </div>
+                    <div class="filters-clear active" data-ng-click="clearAllFilters()" data-ng-class="{'top-adjusted': hasQueryText()}">
+                        <span class="cmp-divider-vertical"></span>
+                        Rensa s&#246;kning
+                    </div>
+                    <section class="filters ng-cloak" data-ng-class="{'no-show-more':!isMobileView}">
+
+                        <h1 class="filters-title">Filtrera din s&#246;kning</h1>
+
+                        <ul class="filter-card-list" data-ng-class="{'disabled': isSearching()}">
+
+                            <li class="filter-card"
+                                data-ng-repeat="filter in getFilters() | orderBy:['Timestamp', 'Priority'] | limitTo:numVisibleFilters track by filter.Name"
+                                data-ng-class="{
+								              'open': filter.IsOpen,
+								              'selected': filter.SelectedModifiers,
+								              'loading': filter.showLoader && !filter.SelectedModifiers
+							              }"
+                                data-sb-filter-card>
+
+                                <div class="content">
+
+                                    <div class="title">
+                                        <div class="title-content">
+                                            <span data-ng-if="!filter.SelectedModifiers" class="name"><i class="filter-icon {{filter.Name}}" data-ng-class="{'isnew': IsNewFilter(filter)}"></i>{{filter.DisplayName}}</span>
+                                            <span data-ng-if="filter.SelectedModifiers" class="click-area clear-modifiers" data-sb-clear-filter-card><i class="icon icon-close"></i></span>
+                                            <span data-ng-if="filter.SelectedModifiers" class="selected-modifiers"><span class="normal-text" data-ng-bind-html="filter.Prefix | htmlsafe"></span>{{filter.SelectedModifiers | formatterJoin:filter.Delimiter}}<span data-ng-bind-html="filter.Suffix | htmlsafe"></span></span>
+                                            <i class="icon" data-ng-if="filter.IsCategoryCard" data-ng-class="{'icon-down': !filter.IsOpen, 'icon-up': filter.IsOpen}"></i>
+                                        </div>
+                                    </div>
+
+                                    <div class="ajax-loader" data-ng-show="filter.showLoader"></div>
+
+                                    <ul class="filter-modifier-list" data-ng-class="{'multiple-choice': filter.IsMultipleChoice}">
+                                        <li class="filter-modifier" data-ng-repeat="modifier in filter.SearchModifiers" data-sb-filter-modifier>
+                                            <div class="option" data-ng-class="{'has-icon': modifier.IconUrl || modifier.IsEnvironmentallyAcceptable}">
+                                                <span data-ng-if="filter.IsMultipleChoice">
+                                                    <input type="checkbox" data-ng-checked="isChecked(filter, modifier)" id="cb_{{modifier.Attribute}}_{{$index}}" />
+                                                    <label for="cb_{{modifier.Attribute}}_{{$index}}" data-sb-prevent-default><span>{{modifier.DisplayName}}</span></label>
+                                                </span>
+
+                                                <span class="modifier-icon" data-ng-if="modifier.IconUrl"><img data-ng-src="{{modifier.IconUrl}}" alt="{{modifier.DisplayName}}" data-sb-image-load-check=".modifier-icon" /></span>
+                                                <span class="cmp-environmentally-acceptable" data-ng-if="modifier.IsEnvironmentallyAcceptable"></span>
+                                                <span class="name" data-ng-class="{'empty-icon': filter.IsEnvironmentallyAcceptable && !modifier.IsEnvironmentallyAcceptable}">{{modifier.DisplayName}}</span>
+                                                <span class="count">{{modifier.Count}}</span>
+                                            </div>
+                                        </li>
+                                        <!--<li data-ng-if="hasMoreOptions(filter)" class="filter-modifier show-all" data-sb-filter-show-all>-->
+                                        <li class="filter-modifier show-all" data-ng-if="filter.SearchModifiers.length" data-sb-filter-show-all>
+                                            <div class="text">Visa alla</div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                            <li class="show-more-filters" data-ng-click="toggleExpandedFilterList()" data-ng-if="isMobileView">
+                                <div class="content">
+                                    <div class="title">
+                                        <span class="name" data-ng-if="!isExpanded()">Fler s&#246;kfilter</span>
+                                        <span class="name" data-ng-if="isExpanded()">F&#228;rre s&#246;kfilter</span>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </section>
+                </div>
+                <section class="results-container ng-cloak" data-ng-class="{'full-assortment': !isSiteSearchSelected()}" data-ng-controller="ProductSearchResultsController" data-sb-sort-option-text='{"Rank":null,"Volume":"Volym","Price":"Pris","Vintage":"Årgång","Name":"Bokstavsordning","SellStartDate":"Säljstart"}' data-sbval-basket-limit-message="Listan &#228;r full">
+                    <div class="controls cmp-tab-container">
+                        <ul class="cmp-tabs" data-ng-class="{'full-assortment': !isSiteSearchSelected()}">
+                            <li class="store-hits" data-ng-class="{'selected': isSiteSearchSelected()}" data-ng-click="searchInSite()">
+
+                                <span data-ng-if="!isAgentSearchSelected()">
+                                    <span class="fw-show-inline">Butik/ombud</span>
+                                    <span class="fw-hide-inline">Butik/ombud</span>
+                                </span>
+                                <span data-ng-if="isAgentSearchSelected()">
+                                    <span class="fw-show-inline">I lager</span>
+                                    <span class="fw-hide-inline">I lager</span>
+                                </span>
+
+                                <span data-ng-show="isSiteSearchSelected() && isHitCountReady()">({{hitCount()}})</span>
+                                <span data-ng-show="!isSiteSearchSelected() && isInactiveTabHitCountReady()">({{inactiveTabHitCount()}})</span>
+                            </li>
+                            <li class="all-hits" data-ng-class="{'selected': !isSiteSearchSelected()}" data-ng-click="searchFullAssortment()">
+                                <span class="fw-show-inline">I hela sortimentet</span>
+                                <span class="fw-hide-inline">Alla</span>
+                                <span data-ng-show="!isSiteSearchSelected() && isHitCountReady()">({{hitCount()}})</span>
+                                <span data-ng-show="isSiteSearchSelected() && isInactiveTabHitCountReady()">({{inactiveTabHitCount()}})</span>
+                            </li>
+                        </ul>
+
+                        <div class="store-finder-container" data-ng-class="{'has-agent-info': selectedSite.IsAgent && !selectedSite.IsActiveForAgentOrder}" data-ng-hide="!isSiteSearchSelected()"
+                             data-ng-controller="SitePickerController"
+                             data-sb-site-picker-type="ProductSearch"
+                             data-sb-site-picker-texts='{"AllStores":" Alla butiker och ombud ","StoresNearMe":"Butiker nära mig","InStoresNearMe":"Vilka butiker har drycken?"}'>
+                            <script type="text/ng-template" id="customTemplate.html">
+                                <span class="name" data-bind-html-unsafe="match.model.CombinedMatch | typeaheadHighlight:query"></span>
+                            </script>
+                            <div class="cmp-storefinder ng-cloak" data-ng-class="{'selected': !info.selectingSite && selectedSite}">
+
+                                <div class="cmp-storefinder-selecting" data-ng-show="info.selectingSite">
+                                    <input type="text"
+                                           id="site-picker-input"
+                                           placeholder="Skriv in butiken eller om"
+                                           autocomplete="off"
+                                           spellcheck="false"
+                                           data-ng-model="customSelected"
+                                           data-typeahead="result as result for result in getResultsForQuery($viewValue)"
+                                           data-typeahead-template-url="customTemplate.html"
+                                           data-typeahead-min-length="0"
+                                           data-typeahead-wait-ms="0"
+                                           data-typeahead-on-select="handleOnSelect($item)"
+                                           data-typeahead-on-index-change="handleIndexChange($index, $dir)"
+                                           data-sb-site-picker
+                                           data-sb-analytics-change-store />
+                                    <div class="click-area" data-ng-click="closeSelect()">
+                                        <i class="icon icon-close"></i>
+                                    </div>
+                                    <div class="no-results" data-ng-show="showNoHits">Inga träffar</div>
+                                </div>
+                                <div class="cmp-storefinder-selected" data-ng-class="{'is-agent': selectedSite.IsAgent, 'has-results': hasResults()}" data-ng-show="!info.selectingSite && selectedSite" data-sb-open-site-picker>
+                                    <i class="icon icon-search"></i>
+                                    <div class="title"><span class="left"><span class="name">{{selectedSite.Alias || selectedSite.StreetAddress || selectedSite.Address}}</span></span></div>
+                                    <div class="opening-hours" data-ng-if="selectedSite.OpeningHoursToday">{{selectedSite.OpeningHoursToday}}</div>
+                                    <div class="chevron-right"><i class="icon icon-down" data-ng-if="AllStoresSelected()"></i></div>
+                                </div>
+                                <div class="cmp-storefinder-not-selected" data-ng-show="!info.selectingSite && !selectedSite" data-sb-open-site-picker>
+                                    <div class="title">Vilken butik vill du s&#246;ka i?</div>
+                                    <i class="icon icon-down"></i>
+                                </div>
+                            </div>
+                            <div class="agent-info" data-ng-show="selectedSite.IsAgent && !selectedSite.IsActiveForAgentOrder">
+                                <span>Webbest&#228;llning fr.o.m. v&#229;ren 2016</span>
+                                <div class="click-area" data-sb-open-modal="modal-agent-inactive"><i class="icon icon-help"></i></div>
+                            </div>
+                        </div>
+
+                        <div class="sort is-sorted" data-ng-show="hasResults()" data-sb-sort-options='{"Rank":null,"Volume":"Volym","Price":"Pris","Vintage":"Årgång","Name":"Bokstavsordning","SellStartDate":"Säljstart"}'>
+                            <div class="sort-arrows" data-ng-click="toggleSortDir()">
+                                <span class="arrow up" data-ng-class="{'selected': isSortOrderAscending()}"></span><span class="arrow down" data-ng-class="{'selected': !isSortOrderAscending()}"></span>
+                            </div>
+                            <span class="sort-row" data-ng-class="{'is-sorting': sortData.isSorting}">
+                                <span class="sort-title" data-ng-click="toggleSorting()">
+                                    <span data-ng-hide="isSorted()">Sortera din s&#246;kning</span>
+                                    <span data-ng-show="isSorted()">{{getSortFieldName()}}</span>
+                                </span>
+                                <span class="view-options">
+                                    <span class="view-label xs-hide-inline">Välj listvy</span>
+                                    <button data-ng-class="{'selected': resultsView.normal == true }" data-ng-click="toggleResultsView('normal')"><i class="icon icon-list-view"></i></button>
+                                    <button data-ng-class="{'selected': resultsView.detailed == true }" data-ng-click="toggleResultsView('detailed')"><i class="icon icon-detailed-view"></i></button>
+                                    <button data-ng-class="{'selected': resultsView.pictures == true }" data-ng-click="toggleResultsView('pictures')"><i class="icon icon-grid-view"></i></button>
+                                </span>
+                            </span>
+
+                            <ul class="sort-options" data-ng-show="sortData.isSorting">
+                                <li data-ng-repeat="option in sortOptions" data-sb-sort-option="{{option.key}}">{{option.value}}</li>
+                            </ul>
+                        </div>
+
+                    </div> <!--end controls-->
+
+                    <div class="results" data-ng-class="{'no-results': !hasResults(), 'full-assortment': !isSiteSearchSelected()}">
+
+                        <div class="results-message" data-ng-show="!hasResults() && !isSearching()">
+                            <div class="message" data-ng-show="showSearchInfoMessage() && !showAllStoresSearchInfoMessage()">Skriv in din s&#246;kning direkt i f&#228;ltet ovan eller anv&#228;nd n&#229;gon av kategorierna.</div>
+                            <div class="message all-stores" data-ng-show="hasHits() && showAllStoresSearchInfoMessage()">V&#228;lj butik eller ombud f&#246;r att se saldo</div>
+                            <div id="nohits-store" class="message" data-ng-show="!hasHits() && isSiteSearchSelected()">
+                                <span data-ng-if="!isAgentSearchSelected()">Tyv&#228;rr hittade vi inget i vald butik.</span>
+                                <span data-ng-if="isAgentSearchSelected()">Tyv&#228;rr hittade vi inget f&#246;r valt ombud.&#160;</span>
+
+                                <span data-ng-if="getDidYouMeanQuery()"> <a data-ng-href="/?searchquery={{getDidYouMeanQuery()}}" data-ng-click="didYouMeanQuery($event)">{{getDidYouMeanQuery()}}</a>?<span data-ng-if="inactiveTabHitCount() > 0">  <span class="link" data-ng-click="searchFullAssortment()">hela sortimentet</span>.</span></span>
+                                <span data-ng-if="!getDidYouMeanQuery() && inactiveTabHitCount()">Pr&#246;va att s&#246;ka i  <span class="link" data-ng-click="searchFullAssortment()">hela sortimentet</span>.</span>
+                            </div>
+                            <div id="nohits-nostore" class="message" data-ng-show="!hasHits() && !isSiteSearchSelected()">
+                                Tyv&#228;rr hittade vi inte det du s&#246;kte. &#196;ndra din s&#246;kning och prova igen.
+                                <span data-ng-if="getDidYouMeanQuery()"> <a data-ng-href="/?searchquery={{getDidYouMeanQuery()}}" data-ng-click="didYouMeanQuery($event)">{{getDidYouMeanQuery()}}</a>?</span>
+                                <span data-ng-if="!getDidYouMeanQuery()"></span>
+                            </div>
+                        </div>
+
+                        <div class="ajax-loader" data-ng-show="showResultsLoader()"></div>
+
+                        <ul class="result-list" data-ng-class="{'is-pictures-view': resultsView.pictures}" data-ng-show="hasResults()" data-sb-analytics-list="Sökresultat">
+
+                            <li class="elm-product-list-item-full" data-ng-class="{'has-additional-info': resultItem.HasAdditionalInfo, 'is-organic': resultItem.IsOrganic, 'has-product-name-thin': resultItem.ProductNameThin, 'is-detailed-view': resultsView.detailed, 'is-pictures-view': resultsView.pictures, 'has-taste-description': resultItem.HasTasteOrUsage, 'has-taste-clocks': resultItem.HasAnyTasteClock}" data-ng-repeat="resultItem in searchResults track by resultItem.ProductNumber" data-sb-analytics-list-item="{{resultItem}}" data-sb-analytics-list-index="{{$index}}" style="{{resultItem.SugarStyle}}">
+
+                                <a data-ng-href="{{resultItem.ProductUrl}}">
+
+                                    <div class="cmp-wave-label cmp-wave-label-vertical cmp-wave-label-organic" data-ng-if="resultItem.IsOrganic && !resultsView.pictures">
+                                        <div class="cmp-wave-label-text">Ekologiskt</div>
+                                    </div>
+                                    <div class="image-holder">
+                                        <img data-ng-if="!resultsView.pictures" data-ng-src="{{getThumbnailUrl(resultItem.Thumbnail.ImageUrl)}}" src="//static.systembolaget.se/content/assets/images/blank.gif" alt="{{resultItem.Thumbnail.ImageAltAttribute || resultItem.ProductNameBold}}" width="45" height="90" />
+                                        <img data-ng-if="resultsView.pictures" data-ng-src="{{getThumbnailUrl(resultItem.ProductImage.ImageUrl)}}" src="//static.systembolaget.se/content/assets/images/blank.gif" alt="{{resultItem.ProductImage.ImageAltAttribute || resultItem.ProductNameBold}}" width="45" height="90" />
+                                    </div>
+
+                                    <div class="hover"></div>
+
+                                    <div class="elm-product-list-item-full-info">
+                                        <div class="row-container clearfix">
+                                            <div class="row-1">
+                                                <div class="col-left">
+                                                    <span class="product-name-bold">{{resultItem.ProductNameBold}}</span>
+                                                    <span class="product-name-thin xs-hide-inline">{{resultItem.ProductNameThin}}</span>
+                                                </div>
+                                                <div class="col-right product-price">
+                                                    {{resultItem.PriceText | formatCurrency}}<span data-ng-if="resultItem.RecycleFeeIndicator">{{resultItem.RecycleFeeIndicator}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="row-2">
+                                                <div class="col-left">
+                                                    <span data-ng-if="resultItem.ProductNameThin" class="product-name-thin xs-show-inline">{{resultItem.ProductNameThin}}</span>
+                                                    <span data-ng-if="!resultItem.ProductNameThin" class="product-info-1">{{resultItem.ProductInfo1}}</span>
+                                                </div>
+                                                <div class="col-right product-stock-info"><div class="info" data-ng-class="{'pnt-align': resultItem.ProductNameThin}"><span data-ng-if="resultItem.BottleTextShort" class="bottle-text-short">{{resultItem.BottleTextShort}}, </span><span>{{resultItem.VolumeText}}</span><span data-ng-if="resultItem.QuantityText" class="quantity-text">: {{resultItem.QuantityText}}</span></div></div>
+                                            </div>
+                                            <div class="row-3">
+                                                <div class="col-left">
+                                                    <span data-ng-if="resultItem.ProductNameThin" class="product-info-1">{{resultItem.ProductInfo1}}</span>
+                                                    <span data-ng-if="!resultItem.ProductNameThin" class="product-info-2">{{resultItem.BeverageDescriptionShort}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="row-4">
+                                                <div class="col-left">
+                                                    <span data-ng-if="resultItem.ProductNameThin" class="product-info-2">{{resultItem.BeverageDescriptionShort}}</span>
+                                                </div>
+                                                <div class="product-stock-info" data-ng-if="resultsView.pictures">
+                                                    <div class="info"><span data-ng-if="resultItem.BottleTextShort" class="bottle-text-short">{{resultItem.BottleTextShort}}, </span><span>{{resultItem.VolumeText}}</span><span data-ng-if="resultItem.QuantityText" class="quantity-text">: {{resultItem.QuantityText}}</span></div>
+                                                </div>
+                                                <div class="sellstart" data-ng-if="resultItem.SellStartText && resultsView.pictures">{{resultItem.SellStartText}}</div>
+                                                <div class="availability" data-ng-if="resultItem.Availability && resultsView.pictures">{{resultItem.Availability}}</div>
+                                            </div>
+                                            <div class="row-5 additional-info" data-ng-show="resultItem.HasAdditionalInfo || (resultItem.IsOrganic && resultsView.pictures)">
+                                                <div class="col-left">
+                                                    <ul class="ext-unstyled-list">
+                                                        <li class="organic" data-ng-if="resultItem.IsOrganic && resultsView.pictures">
+                                                            <div class="cmp-wave-label cmp-wave-label-organic">
+                                                                <div class="cmp-wave-label-text">Ekologiskt</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="new" data-ng-if="resultItem.IsNewsIconVisible">
+                                                            <div class="cmp-wave-label cmp-wave-label-news">
+                                                                <div class="cmp-wave-label-text">NYHET</div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="availability" data-ng-if="resultItem.Availability && !resultsView.pictures">{{resultItem.Availability}}</li>
+                                                        <li class="sellstart" data-ng-if="resultItem.SellStartText && !resultsView.pictures">{{resultItem.SellStartText}}</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row-7" data-ng-show="resultItem.HasTasteOrUsage">
+                                            <div class="title"></div> <!--TODO EPI-->
+                                            <span>{{resultItem.TasteAndUsage | cut:true:190 }}</span>
+                                        </div>
+                                        <div class="row-8" data-ng-show="resultItem.HasAnyTasteClock">
+                                            <div class="symbols" data-sb-swiper=".scroll-container" data-sb-product-symbols>
+                                                <div class="scroll-container">
+                                                    <ul>
+                                                        <li data-ng-if="resultItem.TasteClockBitter > 0">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockBitter}}"></i>
+                                                            <div class="text">Beska</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockSmokiness > 0">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockSmokiness}}"></i>
+                                                            <div class="text">R&#246;kighet</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockBody > 0 && resultItem.IsCategoryBeer">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockBody}}"></i>
+                                                            <div class="text">Fyllighet</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockSweetness > 0 && resultItem.IsCategoryBeer">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockSweetness}}"></i>
+                                                            <div class="text">S&#246;tma</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockSweetness > 0 && !resultItem.IsCategoryBeer">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockSweetness}}"></i>
+                                                            <div class="text">S&#246;tma</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockBody > 0 && !resultItem.IsCategoryBeer">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockBody}}"></i>
+                                                            <div class="text">Fyllighet</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockRoughness > 0">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockRoughness}}"></i>
+                                                            <div class="text">Str&#228;vhet</div>
+                                                        </li>
+                                                        <li data-ng-if="resultItem.TasteClockFruitacid > 0">
+                                                            <i class="icon icon-tasteclock-{{resultItem.TasteClockFruitacid}}"></i>
+                                                            <div class="text">Fruktsyra</div>
+                                                        </li>
+                                                        <li data-ng-repeat="tastesymbol in getTasteTypes(resultItem)">
+                                                            <i class="icon taste-symbol icon-food-{{tastesymbol | lowercase | removeSpecialSigns}}"></i>
+                                                            <div class="text"><span>{{tastesymbol}}</span></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="more-indicator visible"><i class="icon-right-dir"></i></div>
+                                            </div>
+
+                                            <div class="descriptions-container"></div>
+                                        </div>
+                                    </div>
+
+                                </a>
+
+                                <div class="click-area" data-ng-click="addToBasket($event, resultItem)" data-ng-if="resultItem.IsAddableToBasket" sb-analytics-add-basket="{{resultItem}}"><i class="icon icon-list-add"></i></div>
+                                <div class="click-area" data-ng-click="showMessage($event, resultItem)" data-ng-if="!resultItem.IsAddableToBasket"><div class="icon icon-list-add disabled"></div></div>
+
+                                <div class="message-holder" data-ng-show="resultItem.addedToList">
+                                    <div class="bg"></div>
+                                    <div class="message" data-ng-if="resultItem.IsAddableToBasket"><span class="text inline-icon-list">Tillagd i dryckeslistan</span></div>
+                                    <div class="message" data-ng-if="!resultItem.IsAddableToBasket"><span class="text inline-icon-minus">Artikel kan inte l&#228;ggas till i dryckeslistan</span></div>
+                                </div>
+                                <div class="message-holder" data-ng-if="resultItem.IsAddableToBasket" data-ng-show="resultItem.showAddToBasketError">
+                                    <div class="bg"></div>
+                                    <div class="message"><span class="text inline-icon-minus">{{resultItem.addToBasketError}}</span></div>
+                                </div>
+                            </li>
+
+                            <li class="ajax-loader" data-ng-show="isLoadingMore()"></li>
+                            <li>
+                                <button type="button" class="cmp-btn cmp-btn--show-more cmp-btn--full-width" data-ng-click="loadMore()" data-ng-show="hasMoreHits() && remainingHitsCount() > 0">Visa fler s&#246;ktr&#228;ffar ({{remainingHitsCount()}})</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="recycle-fee" data-ng-show="hasResults() && hasRecycleFee()">* Pant tillkommer</div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<div class="modal modal-filter-taste-clocks" id="modal-filter-TasteClocks" data-ng-controller="TasteClocksModalController" data-sb-modal>
+    <form data-ng-submit="applyFilter()">
+        <div class="title">
+            Smakklockor
+        </div>
+        <div class="scrollable text-content">
+            <p>Filtrera tr&#228;fflistan genom att justera smakklockorna. &#214;nskar du till exempel fylliga drycker s&#228;tter du Fyllighet till ett h&#246;gt nummer.</p>
+            <ul>
+                <li data-ng-repeat="tasteclock in data.filter.SearchModifiers" data-ng-if="tasteclock.DisplayName" data-sb-taste-clock>
+                    <div class="name">{{tasteclock.DisplayName}}</div>
+                    <div class="control">
+                        <div class="from-value">
+                            <button type="button" class="increase" data-ng-disabled="fromValue == maxValue" data-ng-click="increaseFromValue()">+</button>
+                            <button type="button" data-ng-disabled="fromValue == minValue" data-ng-click="decreaseFromValue()">–</button>
+                        </div>
+                        <span class="taste-clock"><i class="icon" data-ng-class="getTasteClockClassFromValue()"></i></span>
+                        <span class="value">{{fromValue}} – {{toValue}}</span>
+                        <span class="taste-clock"><i class="icon" data-ng-class="getTasteClockClassToValue()"></i></span>
+                        <div class="to-value">
+                            <button type="button" class="increase" data-ng-disabled="toValue == maxValue" data-ng-click="increaseToValue()">+</button>
+                            <button type="button" data-ng-disabled="toValue == minValue" data-ng-click="decreaseToValue()">–</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="casque" data-ng-if="tasteClockCasque">
+                <div class="name">{{tasteClockCasque.DisplayName}}</div>
+                <ul>
+                    <li><input type="radio" name="casque" id="tasteClockCasque_0" data-ng-model="casqueData.value" value="-1" /><label for="tasteClockCasque_0"><span class="custom-gfx"></span>Inte viktigt</label></li>
+                    <li><input type="radio" name="casque" id="tasteClockCasque_1" data-ng-model="casqueData.value" value="yes" /><label for="tasteClockCasque_1"><span class="custom-gfx"></span>Ja</label></li>
+                    <li><input type="radio" name="casque" id="tasteClockCasque_2" data-ng-model="casqueData.value" value="no" /><label for="tasteClockCasque_2"><span class="custom-gfx"></span>Nej</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="actions">
+            <button type="button" class="action" data-ng-click="closeModal()">Avbryt</button>
+            <button type="submit" class="action primary">OK</button>
+        </div>
+    </form>
+</div>
+
+<div class="modal modal-filter-alcohol" id="modal-filter-alcoholpercentagenavigator" data-ng-controller="AlcoholPercentageModalController" data-sb-modal>
+    <form data-ng-submit="applyFilter()">
+        <div class="title">
+            Alkoholhalt
+        </div>
+        <div class="scrollable text-content">
+            <p class="bold-text">Jag vill hitta drycker inom intervallet</p>
+            <p>
+                <label for="alcohol_from">Fr&#229;n</label> <input type="text" id="alcohol_from" maxlength="4" data-ng-model="fromValue" data-sb-number-input data-sb-number-input-allow-blank="true" data-sb-number-input-allow-decimal="true" data-sb-blur-on-submit />
+                <label for="alcohol_to">till</label> <input type="text" id="alcohol_to" maxlength="4" data-ng-model="toValue" data-sb-number-input data-sb-number-input-allow-blank="true" data-sb-number-input-allow-decimal="true" data-sb-blur-on-submit /> volymprocent
+            </p>
+        </div>
+        <div class="actions">
+            <button type="button" class="action" data-ng-click="closeModal()">Avbryt</button>
+            <button type="submit" class="action primary">OK</button>
+        </div>
+    </form>
+</div>
+
+<div class="modal modal-filter-sellstart" id="modal-filter-sellstartdatenavigator" data-ng-controller="SellStartDateModalController" data-sb-modal>
+    <form data-ng-submit="applyFilter()">
+        <div class="title">
+            Säljstart
+        </div>
+        <div class="scrollable text-content">
+            <p class="bold-text">Säljstart</p>
+
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <label for="sellstartdate_from">Från</label> <input type="text" id="sellstartdate_from" data-ng-model="fromValue" data-ng-click="openFrom($event)" data-datepicker-popup="{{format}}" data-is-open="fromOpened" data-datepicker-options="dateOptions" data-ng-required="true" data-close-text="Close" data-show-button-bar="false" data-show-weeks="false" readonly unselectable="on" />
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <label for="sellstartdate_to">Till</label> <input type="text" id="sellstartdate_to" data-ng-model="toValue" data-ng-click="openTo($event)" data-datepicker-popup="{{format}}" data-is-open="toOpened" data-datepicker-options="dateOptions" data-ng-required="true" data-close-text="Close" data-show-button-bar="false" data-show-weeks="false" readonly unselectable="on" />
+                </div>
+            </div>
+
+        </div>
+        <div class="actions">
+            <button type="button" class="action" data-ng-click="closeModal()">Avbryt</button>
+            <button type="submit" class="action primary">OK</button>
+        </div>
+    </form>
+</div>
+
+<div class="modal modal-filter-pricenavigator" id="modal-filter-pricenavigator" data-ng-controller="PriceModalController" data-sb-modal='{"preventAutoFocus":true}'>
+    <form data-ng-submit="applyFilter(true)">
+        <div class="title">Pris</div>
+        <div class="scrollable text-content">
+            <ul>
+                <li data-ng-repeat="modifier in data.filter.SearchModifiers" data-ng-click="selectModifier(modifier, true, $event)">
+                    <span class="name">{{modifier.DisplayName | formatPriceFilterWithSymbol: 'kr'}}</span>
+                    <span class="count">({{modifier.Count}})</span>
+                </li>
+            </ul>
+            <p class="bold-text">Pris</p>
+            <p>
+                <input type="text" id="price_interval_from" placeholder="Fr&#229;n" maxlength="6" data-ng-model="fromValue" data-sb-number-input data-sb-number-input-allow-blank="true" />
+                <span class="delimiter">{{data.filter.Delimiter}}</span>
+                <input type="text" id="price_interval_to" placeholder="Till" maxlength="6" data-ng-model="toValue" data-sb-number-input data-sb-number-input-allow-blank="true" />
+            </p>
+        </div>
+        <div class="actions">
+            <button type="button" class="action" data-ng-click="closeModal()">Avbryt</button>
+            <button type="submit" class="action primary">OK</button>
+        </div>
+    </form>
+</div>
+
+<div class="modal modal-filter-modifiers" id="modal-filter-modifiers" data-ng-controller="ProductSearchModalModifiersController" data-sb-modal>
+    <div class="title">
+        {{data.filter.DisplayName}}
+    </div>
+    <div class="scrollable">
+        <ul>
+            <li data-ng-repeat="modifier in data.displayFilter.SearchModifiers" data-ng-click="selectModifier(modifier)" data-ng-class="{'empty': !modifier.Attribute, 'has-icon': modifier.IconUrl || modifier.IsEnvironmentallyAcceptable, 'showing-description': modifier.showDescription}" data-sb-modal-filter-modifier>
+                <div class="is-multiple-choice" data-ng-if="data.filter.IsMultipleChoice && modifier.Attribute" data-ng-click="selectModifier(modifier, true, $event)">
+                    <input type="checkbox" data-ng-checked="isChecked(data.filter, modifier)" />
+                    <label><span></span></label>
+                </div>
+
+                <span class="cmp-environmentally-acceptable" data-ng-if="modifier.IsEnvironmentallyAcceptable"></span>
+                <span class="modifier-icon" data-ng-if="modifier.IconUrl"><img data-ng-src="{{modifier.IconUrl}}" alt="{{modifier.DisplayName}}" data-sb-image-load-check="li" /></span>
+                <span class="modifier-display-name" data-ng-class="{'empty-icon': data.displayFilter.IsEnvironmentallyAcceptable && !modifier.IsEnvironmentallyAcceptable}">{{modifier.DisplayName}}</span>
+                <div class="click-area" data-ng-if="modifier.Description" data-ng-click="showDescription($event, modifier)"><i class="icon icon-info"></i></div>
+                <span class="count">{{modifier.Count}}</span>
+                <div class="description" data-ng-show="modifier.showDescription" data-ng-bind-html="modifier.Description | htmlsafe"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="cmp-modal-util bottom-information-box" data-ng-if="data.displayFilter.IsEnvironmentallyAcceptable">
+        <div class="content gray">
+            <div class="heading">Teckenf&#246;rklaring:</div>
+            <div>
+                <span class="cmp-environmentally-acceptable"></span>
+                <span>Klimatsmartare f&#246;rpackning</span>
+            </div>
+        </div>
+    </div>
+    <button class="action primary" data-ng-click="closeModal()">
+        <span data-ng-if="data.filter.IsMultipleChoice">OK</span>
+        <span data-ng-if="!data.filter.IsMultipleChoice">Avbryt</span>
+    </button>
+</div>
+
+
+
+
+<footer>
+	<section class="container">
+
+		<div class="row">
+
+			<div class="col-sm-12 footer-layout">
+				<h1>Vi svarar g&#228;rna p&#229; dina fr&#229;gor — i butiken, p&#229; telefon, e-post, twitter och facebook. V&#228;lkommen!</h1>
+
+				<ul class="contact-list">
+					<li>
+						<a href="/butiker-ombud/" class="site-link"><img src="//static.systembolaget.se/imagelibrary/publishedmedia/onl5g8o9w5nyv3bg0nrb/icon-sites.png" alt="" width="67" height="67" />V&#229;ra butiker och ombud</a>
+						<p>Adresser och &#246;ppettider f&#246;r v&#229;ra butiker och ombud</p>
+					</li>
+					<li>
+						<img src="//static.systembolaget.se/imagelibrary/publishedmedia/rrx72xcvvcfdy8zj35ot/10_icon-customer-service.png" alt="Kontakta kundtj&#228;nst ikon" width="67" height="67" />
+						<a href="mailto:kundtjanst@systembolaget.se" class="customer-service-link">kundtjanst@systembolaget.se</a>
+						<p>Vi finns p&#229; plats vardagar 9-18 och l&#246;rdagar 10-15.&#160; <a href="tel:0771-838300">0771-83 83 00</a></p>
+					</li>
+					<li>
+						<a href="https://twitter.com/systembolaget" class="twitter-link"><img src="//static.systembolaget.se/imagelibrary/publishedmedia/njli8bwmhlu9c46enuul/icon-twitter.png" alt="Twitter ikon" width="67" height="67" />@systembolaget</a>
+						<p>F&#246;lj oss p&#229; Twitter - h&#228;r svarar vi p&#229; dina fr&#229;gor! </p>
+					</li>
+					<li>
+						<a href="https://facebook.com/systembolaget" class="facebook-link"><img src="//static.systembolaget.se/imagelibrary/publishedmedia/ogvpqj4lpez3qse6f1fi/icon-facebook.png" alt="facebook ikon" width="67" height="67" />facebook.com/systembolaget</a>
+						<p>Diskutera med andra eller st&#228;ll dina fr&#229;gor direkt till oss!</p>
+					</li>
+				</ul>
+
+				<img class="footer-image" src="//static.systembolaget.se/imagelibrary/publishedmedia/opkpjnl05l2glhpkymid/footer_image_medarbetare.png" alt="Vi p&#229; Systembolaget" />
+
+			</div>
+		</div>
+	</section>
+
+	<div class="short-links">
+		<div class="container">
+			<ul>
+				<li>
+					<h2>Om oss</h2>
+					<div class="footer-link-list">
+						<ul>
+		<li><a href="/om-systembolaget/">Om Systembolaget</a></li>
+		<li><a href="/english/">English</a></li>
+		<li><a href="/om-systembolaget/hallbarhet/">H&#229;llbarhet</a></li>
+		<li><a href="/om-systembolaget/hallbarhet/socialt-ansvar/whistleblowing/">Whistleblowing</a></li>
+		<li><a href="/jobba-hos-oss/">Jobba hos oss</a></li>
+</ul>
+
+					</div>
+				</li>
+				<li>
+					<h2>Press och vanliga fr&#229;gor</h2>
+					<div class="footer-link-list">
+						<ul>
+		<li><a href="http://press.systembolaget.se/">Pressrum</a></li>
+		<li><a href="/fragor-och-svar/">Vanliga fr&#229;gor</a></li>
+		<li><a href="/butiker-ombud/">Butiker &amp; ombud</a></li>
+</ul>
+
+					</div>
+				</li>
+				<li>
+					<h2>Best&#228;lla</h2>
+					<div class="footer-link-list">
+						<ul>
+		<li><a href="/bestalla-drycker/">Best&#228;lla dryck</a></li>
+		<li><a href="/fakta-och-nyheter/nyheter-i-sortimentet/webblanseringar/">Webblanseringar</a></li>
+</ul>
+
+					</div>
+				</li>
+				<li>
+					<h2>&#214;vrigt</h2>
+					<div class="footer-link-list">
+						<ul>
+		<li><a href="/app/">V&#229;r app</a></li>
+		<li><a href="/presentartiklar/">Presentsortiment</a></li>
+		<li><a href="/api/">&#214;ppna API:er</a></li>
+		<li><a href="/om-systembolaget/bli-leverantor/">Bli leverant&#246;r</a></li>
+		<li><a href="http://leverantorsportalen.systembolaget.se/">Leverant&#246;rsportalen</a></li>
+</ul>
+
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="bottom-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="content">
+						<div class="copyright">&copy; Systembolaget</div>
+						<ul>
+		<li><a href="/om-lankning/">Om l&#228;nkning</a></li>
+		<li><a href="/om-cookies/">Om cookies</a></li>
+		<li><a href="/om-webbplatsen/">Om webbplatsen</a></li>
+		<li><a href="/allmanna-villkor/">Allm&#228;nna villkor</a></li>
+</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+    </div>
+
+    <div class="to-the-top-container">
+        <button class="to-the-top cmp-btn cmp-btn--action" data-sb-to-the-top><i class="icon icon-up"></i></button>
+    </div>
+    <div class="modal modal-login" id="modal-login" data-ng-controller="ModalLoginController" data-sb-modal>
+        <form data-ng-submit="submit()" name="login-form" novalidate>
+            <div class="title">Logga in</div>
+            <div class="error-message" data-ng-repeat="validation in validationList | filter: hasValidationMessage(validation)">
+                {{validation.Message}}
+            </div>
+            <div class="info-message" data-ng-show="data.showInfoMessageCreate">Ditt konto &#228;r nu skapat.&#160;Som en extra bekr&#228;ftelse kommer vi att skicka ett brev hem till dig. V&#228;nligen logga in f&#246;r att forts&#228;tta.</div>
+            <div data-ng-if="!isLoginEnabled">
+                <div class="text-content centered">Det g&#229;r f&#246;r n&#228;rvarande inte att logga in.&#160;F&#246;rs&#246;k igen om en stund.</div>
+                <button class="action primary" type="button" data-ng-click="closeModal()">St&#228;ng</button>
+            </div>
+            <div data-ng-if="isLoginEnabled">
+                <fieldset>
+                    <legend class="a11y">Logga in</legend>
+                    <label for="login-username">E-post</label>
+                    <input type="email" placeholder="Din e-postadress" id="login-username" spellcheck="false" data-ng-model="userLoginData.Username" data-ng-focus="showErrorMessage=false" />
+                    <label for="login-password">L&#246;senord</label>
+                    <input type="password" id="login-password" data-ng-model="userLoginData.Password" data-ng-focus="showErrorMessage=false" />
+
+                    <div class="options">
+                        <a href="/mina-sidor/glomt-losenord/">Gl&#246;mt l&#246;senord</a>
+                        <a href='{{formatUrl("/mina-sidor/skapa-konto/")}}'>Skapa konto</a>
+                    </div>
+                </fieldset>
+                <div class="actions">
+                    <button class="action" type="button" data-ng-click="closeModal()">Avbryt</button>
+                    <button class="action primary" type="submit">OK</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="modal-agecheck"
+         class="modal fullscreenmodal"
+         data-ng-controller="ModalAgeVerificationController"
+         data-sb-modal='{"noClose":"true", "SupressUnder20Modal":"False"}'>
+
+        <img src="//static.systembolaget.se/content/assets/images/sb-logotype.svg" data-sb-svg-fallback="//static.systembolaget.se/content/assets/images/sb-logotype.gif" class="logotype" alt="Hem" />
+        <h1>20 &#229;r eller &#228;ldre?</h1>
+        <div class="col-xs-12 col-xs-full-width clearfix">
+            <hr class="dotted" />
+        </div>
+
+        <h2>Denna webbsida inneh&#229;ller information om alkoholdrycker. F&#246;r ink&#246;p och bes&#246;k p&#229; denna webbplats m&#229;ste du vara 20 &#229;r eller &#228;ldre.</h2>
+
+        <div class="actions">
+            <a class="action primary" href="/under-20/" tabindex="{{IsAgeVerifiedTabValue()}}"><span>Jag &#228;r under 20 &#229;r</span></a>
+            <button class="action" type="button" data-ng-click="closeModalAndSetCookie()" tabindex="{{IsAgeVerifiedTabValue()}}">Jag &#228;r 20 &#229;r eller &#228;ldre</button>
+        </div>
+
+        <div class="disclaimer"><p>När jag bekräftar att jag är 20 år eller äldre&nbsp;godkänner jag också att systembolaget.se använder cookies. <a href="/under-20/om-cookies/">Vad är cookies?</a></p>
+<p><a href="/under-20/">Varför är det åldersgräns</a> på systembolaget.se?</p></div>
+    </div>
+
+    <div class="modal" id="modal-agent-inactive" data-sb-modal>
+        <div class="title">Varf&#246;r kan jag inte best&#228;lla till detta ombud?</div>
+        <div class="scrollable text-content">
+            <p><span>Det går inte att göra webbeställningar till detta ombud ännu, men vi jobbar på det. Under våren 2016 gör vi det möjligt att beställa till alla ombud via systembolaget.se.&nbsp;Tills vidare beställer du genom att kontakta ditt ombud.</span></p>
+        </div>
+        <button class="action primary" type="button" data-ng-click="closeModal()">St&#228;ng</button>
+    </div>
+
+    <div class="modal" id="modal-stores-near-me" data-ng-controller="StoresNearMeModalController as snmmCtrl" data-sb-modal>
+        <div class="title">Butiker som har drycken</div>
+        <div data-ng-if="!isStoresNearMeEnabled">
+            <div class="text-content centered">Det g&#229;r f&#246;r n&#228;rvarande inte att s&#246;ka p&#229; butiker n&#228;ra dig. F&#246;rs&#246;k igen om en stund.</div>
+            <button class="action primary" type="button" data-ng-click="closeModal()">St&#228;ng</button>
+        </div>
+        <div data-ng-if="isStoresNearMeEnabled">
+            <div data-ng-if="isProductPage">
+                <div class="county-selector" data-ng-class="{'position-button-ishidden': !isGeoLocationAllowed()}">
+                    <div class="selector-holder">
+                        <span class="input-holder">
+                            <label for="county-selector" class="sb-select">
+                                <form>
+                                    <select id="county-selector" class="sb-select" data-ng-model="snmmCtrl.selectedCounty" data-ng-change="searchStoresInCounty(snmmCtrl.selectedCounty)">
+                                        <option value="0" disabled>Välj län</option>
+                                        <option value="1">Hela landet</option>
+                                        <option>Blekinge län</option>
+                                        <option>Dalarnas län</option>
+                                        <option>Gotlands län</option>
+                                        <option>Gävleborgs län</option>
+                                        <option>Hallands län</option>
+                                        <option>Jämtlands län</option>
+                                        <option>Jönköpings län</option>
+                                        <option>Kalmar län</option>
+                                        <option>Kronobergs län</option>
+                                        <option>Norrbottens län</option>
+                                        <option>Skåne län</option>
+                                        <option>Stockholms län</option>
+                                        <option>Södermanlands län</option>
+                                        <option>Uppsala län</option>
+                                        <option>Värmlands län</option>
+                                        <option>Västerbottens län</option>
+                                        <option>Västernorrlands län</option>
+                                        <option>Västmanlands län</option>
+                                        <option>Västra Götalands län</option>
+                                        <option>Örebro län</option>
+                                        <option>Östergötlands län</option>
+                                    </select>
+                                </form>
+                            </label>
+                        </span>
+                        <button class="ext-unstyled-button location-search icon-only-button ng-cloak" data-ng-click="searchStoresNearMe()" data-ng-if="isGeoLocationAllowed()">Positionssök<i class="icon icon-location"></i></button>
+                    </div>
+                </div>
+                <div class="county-selector-quantity-found" data-ng-if="showProductPageHeading">Finns i  {{results.DocCount}} {{ snmmCtrl.pluralize(results.DocCount, "butik", "butiker") }}</div>
+            </div>
+
+            <div class="text-content centered" data-ng-if="!canShowResults">
+                Till&#229;t webbl&#228;saren att h&#228;mta din position f&#246;r att se butiker n&#228;ra dig.&#160;
+
+Om du nekar till&#229;telse kanske du inte kan anv&#228;nda viss funktionalitet p&#229; v&#229;r webbplats. Listan &#246;ver butiker som har en viss vara sorteras d&#229; exempelvis i bokstavsordning efter ort ist&#228;llet f&#246;r utifr&#229;n din position.
+            </div>
+            <div class="text-content centered" data-ng-if="canShowResults && !hasResults()">
+                Varan finns inte i n&#229;gon butik
+            </div>
+            <ul class="scrollable cmp-list cmp-2-col-list cmp-list-stores-near-me" data-ng-if="canShowResults">
+                <li data-ng-repeat="result in results.SiteStock" data-ng-click="setSite(result.Site)">
+                    <div class="col">
+                        <div class="bold-text"><span data-ng-if="result.Site.Alias">{{result.Site.Alias}}, </span>{{result.Site.StreetAddress}}</div>
+                        <div>{{result.Site.City}}</div>
+                    </div>
+                    <div class="col">
+                        <div class="text-right bold-text" data-ng-if="result.Stock">{{result.Stock.Stock}} {{result.Stock.StockLabel}}</div>
+                        <div class="text-right" data-ng-class="{'bold-text': !result.Stock}">{{result.Site.Position.Distance | formatDistance}}</div>
+                    </div>
+                </li>
+            </ul>
+            <button class="action primary" data-ng-click="showMore()" data-ng-if="canShowResults && hasResults() && hasMoreResults()">Visa fler butiker</button>
+            <button class="action primary" data-ng-click="closeModal()" data-ng-if="!canShowResults || !hasResults() || !hasMoreResults()">St&#228;ng</button>
+        </div>
+    </div>
+
+    <div class="modal error" id="modal-system-exception" data-ng-controller="ExceptionModalController" data-sb-modal>
+        <div class="title">
+            <p>N&#229;got gick fel</p>
+        </div>
+        <div class="scrollable text-content centered">
+            <p>N&#229;got gick fel</p>
+            <p>{{data.exception.ExceptionType}}</p>
+            <p>{{data.exception.Message}}</p>
+            <p>{{data.exception.StackTrace}}</p>
+        </div>
+        <button class="action primary" data-ng-click="closeModal()">St&#228;ng</button>
+    </div>
+
+    <div class="modal" id="modal-confirm-cancel-inquiry-quotation" data-ng-controller="ConfirmationModalController" data-sb-modal>
+        <div class="title">
+            Avbryt f&#246;rfr&#229;gan om Privatimport
+        </div>
+        <div class="scrollable text-content">
+            Vill du avbryta din p&#229;b&#246;rjade f&#246;rfr&#229;gan om Privatimport? All information kommer att g&#229; f&#246;rlorad.&#160;
+        </div>
+        <div class="actions">
+            <button class="action" data-ng-click="modal.actions.cancel()">Nej</button>
+            <button class="action primary" data-ng-click="modal.actions.ok()">Ja</button>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-confirm-cancel-valuation-form" data-ng-controller="ConfirmationModalController" data-sb-modal>
+        <div class="title">
+            OVERWRITE product title
+        </div>
+        <div class="scrollable text-content centered">
+            OVERWRITE product content
+        </div>
+        <div class="actions">
+            <button class="action" data-ng-click="modal.actions.cancel()">St&#228;ng</button>
+            <button class="action primary" data-ng-click="modal.actions.ok()">OK</button>
+        </div>
+    </div>
+
+    <div class="modal modal-share" id="modal-share" data-sb-modal data-ng-controller="ModalSharePageController"></div>
+
+    <script src="//static.systembolaget.se/bundles/app.js?v=vTPOzvFHdRaG8oDrceBjsqBCu1cHqXgTjqX83KgH6i01"></script>
+
+
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+</body>
+</html>
